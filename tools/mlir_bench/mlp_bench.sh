@@ -37,7 +37,7 @@ while getopts "t:l:b:D" arg; do
   esac
 done
 
-if [ $NUM_LAYERS = "" ]; then
+if [ ! $NUM_LAYERS ]; then
   NUM_LAYERS=3
 fi
 
